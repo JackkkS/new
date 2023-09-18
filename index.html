@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="images/logo.png" type="image/icon">
+  <title>Maketing</title>
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <h1>VISION</h1>
+    <p class="P3">To be the leading academy that prepares chidren <br />
+    for the future of Work.</p>
+    <br />
+    <h1>MISSION</h1>
+    <p class="P3">To deliver first class learning experienc in an <br />
+      immersive & enaging environment to deverlop <br />
+      21st Century Skills.</p>
+  </div>
+  <div class=pic>
+    <img src="img/178391607_480335726743254_613114523360022528_n.jpg">
+  </div>  
+  <div class="grid">
+    <div class="logo">
+      <img src="/img/ionia_crop.png" alt="Logo" class="logo">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    
+    <div class="ionia">
+      <p class="P1">2023 Programs</p>
+      <p class="P2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </br>
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+        galley of type and scrambled it to make a type specimen book. </br>
+        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+        unchanged. </br>
+        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+        recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <br />
+      <button type="button" onclick="document.location = 'menu.html'" class="btn">Find out!</button>
+    </div>
+  </div>
+  
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+</body>
+
+</html>

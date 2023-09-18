@@ -1,0 +1,117 @@
+@font-face {
+    font-family: samsen;
+    src: url(/font/samsen.ttf);
+}
+
+@font-face {
+    font-family: segoeui;
+    src: url(/font/segoeui.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.bg {
+    background-image: url("/img/backgrand.png");
+    background-size: 100%;
+    background-position: center right ;
+    background-repeat: no-repeat;
+
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 1%;
+}
+
+header h1 {
+    position: relative;
+    left: 180px;
+    font-size: 140px;
+    font-family: "samsen", sans-serif;
+    padding-top: 170px;
+    margin-right: 40%;
+    
+}
+
+header p1 {
+    position: absolute;
+    left: 250px;
+    bottom: px;
+    font-size: 70px;
+    color: rgb(229, 50, 0);
+
+}
+
+.logo img {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    width: 25%;
+    margin-top: 40px;
+    padding-left: 15%;
+    background-image: none;
+
+}
+
+header span {
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 416px;
+    font-size: 70px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    cursor: pointer;
+    top: 180px;
+    right: 47px;
+}
+
+.btn{
+    display: flex;
+   
+    height: 17rem;
+    width: 60rem;
+    background: #c2c0c0fe;
+    border: solid 3px #8f8f8ffe;
+    border-radius: 10px;
+    cursor:pointer
+}
+
+.img1 {
+    width: 30%;
+    margin-top: 4%;
+    margin-left: 3%;
+    border-radius: 10px;
+    
+}
+
+.img2{
+    width: 3rem;
+    height: 13rem;
+    margin-top: 3%;
+    margin-left: 1%;
+    
+}
+
+.img3{
+    width: 58%;
+    margin:auto;
+    border-radius: 10px;
+    
+}
+
+
+@media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
+    .ipad-portrait { color: red; } /* your css rules for ipad portrait */
+  }
+  @media all and (device-width: 1366px) and (device-height: 1024px) and (orientation:landscape) {
+    .ipad-landscape { color: blue; } /* your css rules for ipad landscape */
+  }
+

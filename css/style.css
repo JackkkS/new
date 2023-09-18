@@ -1,0 +1,168 @@
+@font-face {
+    font-family: samsen;
+    src: url(/font/samsen.ttf);
+}
+
+@font-face {
+    font-family: segoeui;
+    src: url(/font/segoeui.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(/img/backgrand.png);
+    background-size: 65% ;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    background-size: 115% ;
+    background-position: center right;
+    background-repeat: no-repeat;
+    
+}  
+
+.pic{
+  align-self: flex-start;
+}
+
+.pic img{
+  width: 100%;
+}
+
+.logo img{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    width: 25%;
+    margin-top: 40px;
+    padding-left: 15%;
+    background-image: none;
+}
+
+.ionia {
+    margin-bottom: 2.5rem;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.P1{
+    font-family: "samsen", sans-serif;
+    font-size: 60px;
+    color:rgb(255, 79, 30) ;
+}
+
+.P2{
+    font-family: "segoeui", sans-serif;
+}
+
+.grid{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    display: grid;
+    width: 87%;
+    row-gap: 20px;
+    justify-content: center;
+}
+
+
+
+.btn{
+    font-family: "samsen", sans-serif;
+    height: 40px;
+    width: 13%;
+    font-size: 90%;
+    color: rgb(255, 79, 30);
+    background: #fffffffe;
+    border: solid 3px rgb(255, 79, 30);
+    border-radius: 1px;
+    cursor:pointer
+}
+
+span{
+    position: absolute;
+    top: 190px;
+    right: 40px;
+   }
+
+.sidenav {
+    height: 80%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: url(/img/kid.jpg);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center left;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    
+    text-decoration: none;
+    
+    color: #818181;
+    display: block;
+    
+  }
+ 
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 70px;
+    margin-left: 50px;
+    margin-top: 20%;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .sidenav h1 {
+    font-family: "samsen", sans-serif;
+    font-size: 60px;
+    margin-top: 5%;
+    margin-left: 10%;
+    color: #ffff;
+  }
+
+  .sidenav .P3 {
+    font-family: "samsen", sans-serif;
+    font-size: 35px;
+    margin-top: 2%;
+    margin-left: 10%;
+    padding-left: 2%;
+    color: #ffff;
+  }
+
+  footer {
+    position: relative;
+    background-color: #5c5c5c;
+}
+
+footer img{
+    position: absolute;
+    bottom: 40px;
+    left: 45%;
+    width: 10%;
+}
+
+@media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
+    .ipad-portrait { color: red; } /* your css rules for ipad portrait */
+  }
+  @media all and (device-width: 1366px) and (device-height: 1024px) and (orientation:landscape) {
+    .ipad-landscape { color: blue; } /* your css rules for ipad landscape */
+  }

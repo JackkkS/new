@@ -1,0 +1,250 @@
+@font-face {
+    font-family: samsen;
+    src: url(/font/samsen.ttf);
+}
+
+@font-face {
+    font-family: segoeui;
+    src: url(/font/segoeui.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: calc(60% + 0.8vmin);
+}
+
+.bg {
+    position: relative;
+    
+    background-image: url("/img/backgrand.png");
+    background-size: 100%;
+    background-position: center left bottom;
+    background-repeat: no-repeat;
+
+
+}
+
+
+header h1 {
+    position: relative;
+    left: 10.625rem;
+    font-size: 8.75rem;
+    font-family: "samsen", sans-serif;
+    padding-top: 9.375rem;
+    
+}
+
+header p1 { 
+    position: absolute;
+    left: 15.625rem;
+    bottom: 3.438;
+    font-size: 4.375rem;
+    color: rgb(229, 50, 0);
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 25% 3% 25% 3% 25%;
+    grid-template-rows: 32% 32%;
+    margin-left: 14%;
+    
+    row-gap: 40px;
+    grid-template-areas:
+        'menu menu menu'
+        'menu menu menu'
+        'topic topic topic';
+}
+
+.menu img {
+    width: 80%;
+    margin-top: 10px;
+    border-radius: 10px;
+   
+}
+
+.menu h3 {
+    font-family: "samsen", sans-serif;
+    font-size: 3.125rem;
+    text-align: center;
+}
+
+.menu h4 {
+    font-family: "samsen", sans-serif;
+    font-size: 1.438rem;
+    text-align: center;
+}
+
+.menu b {
+    font-family: "segoeui", sans-serif;
+    font-size: 0.938rem;
+    
+    color: rgb(229, 50, 0);
+    
+}
+
+.about h3 {
+    font-family: "samsen", sans-serif;
+    font-size: 3.125rem;
+    text-align: center;
+
+}
+
+
+
+.logo {
+    margin-top: 0;
+
+}
+
+.logo img {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    width: 25%;
+    margin-top: 40px;
+    padding-left: 15%;
+    background-image: none;
+
+}
+
+header span {
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 416px;
+    font-size: 70px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    cursor: pointer;
+    top: 180px;
+    right: 50px;
+}
+
+.topic {
+    grid-area: topic;
+
+}
+
+.topic h2 {
+    position: relative;
+    font-size: 8.75rem;
+    font-family: "samsen", sans-serif;
+
+
+
+}
+
+.topic p2 {
+    position: absolute;
+    
+    bottom: 3.438rem;
+    font-size: 4.375rem;
+    color: rgb(255, 79, 30);
+}
+
+
+
+.line1 {
+    margin: auto;
+    top: 21.875rem;
+    left: 26.25rem;
+    width: 50%;
+    height: 70%;
+    z-index: 2;
+    max-width: 100%;
+    object-fit: cover;
+    
+}
+
+.line2 {
+    
+    top: 17%;
+    right: 34.8%;
+    width: 7%;
+    height: 16%;
+    z-index: 2;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.line3 {
+    
+    top: 40%;
+    left: 33.4%;
+    width: 7%;
+    height: 16%;
+    z-index: 2;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.line4 {
+   
+    top: 40%;
+    right: 34.8%;
+    width: 7%;
+    height: 16%;
+    z-index: 2;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.line5 {
+    
+    bottom: 12%;
+    left: 33.4%;
+    width: 7%;
+    height: 16%;
+    z-index: 2;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.btn{
+    width: 100%;
+    height: 100%;
+    border: white;
+    background-color: #e0dddd;
+    border-radius: 10px;
+    cursor:pointer
+}
+
+
+
+footer {
+    position: relative;
+    background-color: #5c5c5c;
+    clear: both;
+}
+
+footer img{
+    position: absolute;
+    bottom: 1.2rem;
+    left: 45%;
+    width: 9.375rem;
+}
+
+@media screen and (max-width: 2048) and (orientation:landscape){
+    header h1 {
+        
+        left: 10.625rem;
+        font-size: 8.75rem;
+        font-family: "samsen", sans-serif;
+        padding-top: 9.375rem;
+        
+    }
+    header p1 { 
+        
+        left: 15.625rem;
+        bottom: 4;
+        font-size: 4.375rem;
+        color: rgb(229, 50, 0);
+    
+    }
+}

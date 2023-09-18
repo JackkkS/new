@@ -1,0 +1,101 @@
+@font-face {
+    font-family: samsen;
+    src: url(/font/samsen.ttf);
+}
+
+@font-face {
+    font-family: segoeui;
+    src: url(/font/segoeui.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 15%;
+}
+
+
+
+.bg {
+    position: relative;
+    bottom: 0;
+    background-image: url("/img/backgrand.png");
+    background-size: 100%;
+    background-position: center right ;
+    background-repeat: no-repeat;
+
+
+}
+
+header{
+    margin-left: 15%;
+}
+
+
+header h1 {
+    position: absolute;
+    font-size: 70px;
+    color: rgb(229, 50, 0);
+    font-family: "samsen", sans-serif;
+    top: 400px;
+    margin-left: 5%;
+}
+
+header p1 {
+    position: absolute;
+    font-size: 16px;
+    color: black;
+}
+.img1 {
+    position: relative;
+   
+}
+
+.logo img {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    width: 25%;
+    margin-top: 40px;
+    padding-left: 15%;
+    background-image: none;
+
+}
+
+header span {
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 416px;
+    font-size: 70px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    cursor: pointer;
+    top: 180px;
+    right: 47px;
+}
+
+.btn{
+   border: solid rgb(205, 199, 199);
+    border-radius: 10px;
+    margin-left: 23%;
+    cursor:pointer
+}
+
+.btn1{
+    border: none;
+    cursor:pointer
+ }
+
+
+@media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
+    .ipad-portrait { color: red; } /* your css rules for ipad portrait */
+  }
+  @media all and (device-width: 1366px) and (device-height: 1024px) and (orientation:landscape) {
+    .ipad-landscape { color: blue; } /* your css rules for ipad landscape */
+  }
